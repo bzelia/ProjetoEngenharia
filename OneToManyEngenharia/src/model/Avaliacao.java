@@ -1,8 +1,8 @@
 package model;
 
 public class Avaliacao {
-    private String codServico;
-    private String codCliente;
+    private Servico codServico; 
+    private Cliente codCliente;
     private int notaAvaliacao;
     private int dataAvaliacao;
     private String comentario;
