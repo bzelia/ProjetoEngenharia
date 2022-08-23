@@ -14,10 +14,10 @@ public class Agendamento {
     public Agendamento() {
     }
 
-    public Agendamento(int codAgendamento, Empresa codEmpresa, Cliente codCliente, LocalDateTime horario, LocalDate data) {
+    public Agendamento(int codAgendamento, Empresa empresa, Cliente cliente, LocalDateTime horario, LocalDate data) {
         this.codAgendamento = codAgendamento;
-        this.codEmpresa = codEmpresa;
-        this.codCliente = codCliente;
+        this.empresa = empresa;
+        this.cliente = cliente;
         this.horario = horario;
         this.data = data;
     }
@@ -30,20 +30,20 @@ public class Agendamento {
         this.codAgendamento = codAgendamento;
     }
 
-    public Empresa getCodEmpresa() {
-        return codEmpresa;
+    public Empresa getEmpresa() {
+        return empresa;
     }
 
-    public void setCodEmpresa(Empresa codEmpresa) {
-        this.codEmpresa = codEmpresa;
+    public void setEmpresa(Empresa empresa) {
+        this.empresa = empresa;
     }
 
-    public Cliente getCodCliente() {
-        return codCliente;
+    public Cliente getCliente() {
+        return cliente;
     }
 
-    public void setCodCliente(Cliente codCliente) {
-        this.codCliente = codCliente;
+    public void setCliente(Cliente cliente) {
+        this.cliente = cliente;
     }
 
     public LocalDateTime getHorario() {
@@ -61,7 +61,6 @@ public class Agendamento {
     public void setData(LocalDate data) {
         this.data = data;
     }
-    
-    
+
     
 }
