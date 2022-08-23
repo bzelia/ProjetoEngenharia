@@ -5,7 +5,6 @@ import java.time.LocalDate;
 
 public class Colaborador {
     private String cod_colaborador;
-    private Empresa codEmpresa;
     private LocalDate data_contrato;
     private String nome;
     private String email;
@@ -23,9 +22,8 @@ public class Colaborador {
     public Colaborador() {
     }
 
-    public Colaborador(String cod_colaborador, Empresa codEmpresa, LocalDate data_contrato, String nome, String email, LocalDate data_nascimento, String genero, String telefone, String senha, boolean status, boolean privilegio_adm, String funcao) {
+    public Colaborador(String cod_colaborador, LocalDate data_contrato, String nome, String email, LocalDate data_nascimento, String genero, String telefone, String senha, boolean status, boolean privilegio_adm, String funcao) {
         this.cod_colaborador = cod_colaborador;
-        this.codEmpresa = codEmpresa;
         this.data_contrato = data_contrato;
         this.nome = nome;
         this.email = email;
@@ -44,14 +42,6 @@ public class Colaborador {
 
     public void setCod_colaborador(String cod_colaborador) {
         this.cod_colaborador = cod_colaborador;
-    }
-
-    public Empresa getCodEmpresa() {
-        return codEmpresa;
-    }
-
-    public void setCodEmpresa(Empresa codEmpresa) {
-        this.codEmpresa = codEmpresa;
     }
 
     public LocalDate getData_contrato() {
@@ -133,7 +123,6 @@ public class Colaborador {
     public void setFuncao(String funcao) {
         this.funcao = funcao;
     }
-    
-     
-    
+
+   
 }
