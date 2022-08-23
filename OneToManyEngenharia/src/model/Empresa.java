@@ -16,6 +16,7 @@ public class Empresa {
     private String logradouro;
     private String numero;
     private String bairro;
+    private List<Colaborador> colaborador = new ArrayList<>();
     
     public Empresa(){}
 
