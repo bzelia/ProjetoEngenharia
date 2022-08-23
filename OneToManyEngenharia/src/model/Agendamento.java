@@ -6,8 +6,8 @@ import java.time.LocalDateTime;
 
 public class Agendamento {
     private int codAgendamento;
-    private Empresa codEmpresa;
-    private Cliente codCliente;
+    private Empresa empresa;
+    private Cliente cliente;
     private LocalDateTime horario;
     private LocalDate data;
 
