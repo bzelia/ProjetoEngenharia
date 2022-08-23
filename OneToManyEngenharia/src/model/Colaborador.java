@@ -11,16 +11,19 @@ public class Colaborador {
     private String email;
     private LocalDate data_nascimento;
     private String genero;
-    private double telefone;
+    private String telefone;
     private String senha;
     private boolean status;
     private boolean privilegio_adm;
     private String funcao;
 
+    
+    
+    
     public Colaborador() {
     }
 
-    public Colaborador(String cod_colaborador, Empresa codEmpresa, LocalDate data_contrato, String nome, String email, LocalDate data_nascimento, String genero, double telefone, String senha, boolean status, boolean privilegio_adm, String funcao) {
+    public Colaborador(String cod_colaborador, Empresa codEmpresa, LocalDate data_contrato, String nome, String email, LocalDate data_nascimento, String genero, String telefone, String senha, boolean status, boolean privilegio_adm, String funcao) {
         this.cod_colaborador = cod_colaborador;
         this.codEmpresa = codEmpresa;
         this.data_contrato = data_contrato;
@@ -91,11 +94,11 @@ public class Colaborador {
         this.genero = genero;
     }
 
-    public double getTelefone() {
+    public String getTelefone() {
         return telefone;
     }
 
-    public void setTelefone(double telefone) {
+    public void setTelefone(String telefone) {
         this.telefone = telefone;
     }
 
